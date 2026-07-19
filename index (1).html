@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Graziel Royal Schools — Knowledge, Spirit and Service</title>
+<meta name="description" content="Graziel Royal Schools — an institution built on Knowledge, Spirit and Service.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Cormorant:ital,wght@0,500;0,600;1,500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ WATERMARK CREST (fixed, ambient) ============ -->
+<div class="watermark-crest" aria-hidden="true">
+  <svg viewBox="0 0 200 220"><use href="#crest-shape"></use></svg>
+</div>
+
+<!-- ============ SVG SYMBOL DEFS ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="crest-shape" viewBox="0 0 200 220">
+      <path d="M100 4 L188 32 V110 C188 165 150 200 100 216 C50 200 12 165 12 110 V32 Z"/>
+    </symbol>
+    <symbol id="icon-knowledge" viewBox="0 0 64 64">
+      <path d="M6 14 C16 8 26 8 32 14 C38 8 48 8 58 14 V50 C48 44 38 44 32 50 C26 44 16 44 6 50 Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+      <line x1="32" y1="14" x2="32" y2="50" stroke="currentColor" stroke-width="2.5"/>
+    </symbol>
+    <symbol id="icon-spirit" viewBox="0 0 64 64">
+      <path d="M32 6 C40 20 46 26 46 36 C46 47 40 54 32 54 C24 54 18 47 18 36 C18 26 24 20 32 6 Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+      <path d="M32 24 C36 32 38 34 38 40 C38 45.5 35.3 49 32 49 C28.7 49 26 45.5 26 40 C26 34 28 32 32 24 Z" fill="currentColor" stroke="none"/>
+    </symbol>
+    <symbol id="icon-service" viewBox="0 0 64 64">
+      <path d="M32 10 L38 24 L53 26 L42 36 L45 51 L32 43 L19 51 L22 36 L11 26 L26 24 Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-arrow" viewBox="0 0 24 24">
+      <path d="M4 12h15m0 0l-6-6m6 6l-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#top" class="brand">
+      <img class="brand-crest" src="assets/graziel-logo.jpg" alt="Graziel Royal Schools crest">
+      <span class="brand-text">
+        <span class="brand-name">Graziel Royal Schools</span>
+        <span class="brand-motto">Knowledge · Spirit · Service</span>
+      </span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#about">About</a>
+      <a href="#pillars">Our Pillars</a>
+      <a href="#houses">Houses</a>
+      <a href="#news">News</a>
+      <a href="#admissions">Admissions</a>
+      <a href="#contact" class="nav-cta">Enquire</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="hero-eyebrow">Est. 1892 &nbsp;·&nbsp; Graziel Royal Schools</p>
+        <h1 class="hero-title">Every scholar carries<br> the crest <em>forward</em>.</h1>
+        <p class="hero-lede">We are a school built on a single register, kept for over a century: what a student comes to <strong>know</strong>, what they carry in <strong>spirit</strong>, and what they give back in <strong>service</strong>. Three words. One shield.</p>
+        <div class="hero-actions">
+          <a href="#admissions" class="btn btn-primary">Begin an application <svg class="icon-inline"><use href="#icon-arrow"></use></svg></a>
+          <a href="#pillars" class="btn btn-ghost">Read the motto</a>
+        </div>
+      </div>
+      <div class="hero-emblem">
+        <div class="emblem-ring">
+          <div class="emblem-plate">
+            <img class="emblem-crest" src="assets/graziel-logo.jpg" alt="Graziel Royal Schools crest">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="motto-ribbon" id ="mottoRibbon">
+      <div class="motto-ribbon-track">
+        <span>KNOWLEDGE</span><span class="dot">✦</span><span>SPIRIT</span><span class="dot">✦</span><span>SERVICE</span><span class="dot">✦</span>
+        <span>KNOWLEDGE</span><span class="dot">✦</span><span>SPIRIT</span><span class="dot">✦</span><span>SERVICE</span><span class="dot">✦</span>
+        <span>KNOWLEDGE</span><span class="dot">✦</span><span>SPIRIT</span><span class="dot">✦</span><span>SERVICE</span><span class="dot">✦</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT / REGISTER ============ -->
+  <section class="about" id="about">
+    <div class="section-inner about-grid">
+      <div class="about-text">
+        <p class="eyebrow">About the school</p>
+        <h2>A register kept since 1892</h2>
+        <p>Graziel Royal Schools was founded on the belief that a school's worth is measured the way a house measures its own: by what it keeps a record of. We keep three things — what our students learn, how they carry themselves, and what they choose to give. That record is the shield above every doorway on our campus.</p>
+        <p>Today Graziel educates day and boarding students from foundation stage through sixth form, across four houses, in classrooms that still open onto the original 1892 quadrangle.</p>
+      </div>
+      <dl class="about-ledger">
+        <div class="ledger-row">
+          <dt>Founded</dt><dd>1892</dd>
+        </div>
+        <div class="ledger-row">
+          <dt>Houses</dt><dd>4</dd>
+        </div>
+        <div class="ledger-row">
+          <dt>Students enrolled</dt><dd>1,240</dd>
+        </div>
+        <div class="ledger-row">
+          <dt>Faculty &amp; staff</dt><dd>168</dd>
+        </div>
+        <div class="ledger-row">
+          <dt>Acres of campus</dt><dd>62</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ PILLARS ============ -->
+  <section class="pillars" id="pillars">
+    <div class="section-inner">
+      <p class="eyebrow eyebrow-light">The motto, unpacked</p>
+      <h2 class="pillars-heading">Three words. Held equally.</h2>
+      <div class="pillars-grid">
+        <article class="pillar-card">
+          <svg class="pillar-icon"><use href="#icon-knowledge"></use></svg>
+          <h3>Knowledge</h3>
+          <p>A rigorous, examined curriculum across the sciences, humanities and arts — taught by faculty who still call themselves students of their subject.</p>
+        </article>
+        <article class="pillar-card">
+          <svg class="pillar-icon"><use href="#icon-spirit"></use></svg>
+          <h3>Spirit</h3>
+          <p>Resilience, curiosity and school pride, built through house competition, music, sport and the quiet confidence of showing up daily.</p>
+        </article>
+        <article class="pillar-card">
+          <svg class="pillar-icon"><use href="#icon-service"></use></svg>
+          <h3>Service</h3>
+          <p>Every senior student completes a term of community placement before graduation — the shield is not finished until it's given away.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOUSES ============ -->
+  <section class="houses" id="houses">
+    <div class="section-inner">
+      <p class="eyebrow">Where students belong</p>
+      <h2>The four houses</h2>
+      <p class="houses-intro">Every student at Graziel is sorted into one of four houses on their first day — a home inside the school, and a team for the year-round house cup.</p>
+      <div class="houses-grid">
+        <article class="house-card house-lancaster">
+          <span class="house-mark">L</span>
+          <h3>Lancaster</h3>
+          <p>Founded 1892 · Colour: Orange</p>
+        </article>
+        <article class="house-card house-ashworth">
+          <span class="house-mark">A</span>
+          <h3>Ashworth</h3>
+          <p>Founded 1892 · Colour: Blue</p>
+        </article>
+        <article class="house-card house-fenwick">
+          <span class="house-mark">F</span>
+          <h3>Fenwick</h3>
+          <p>Founded 1904 · Colour: Gold</p>
+        </article>
+        <article class="house-card house-marlowe">
+          <span class="house-mark">M</span>
+          <h3>Marlowe</h3>
+          <p>Founded 1921 · Colour: Slate</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NEWS ============ -->
+  <section class="news" id="news">
+    <div class="section-inner">
+      <div class="news-head">
+        <div>
+          <p class="eyebrow">From the quadrangle</p>
+          <h2>Notices &amp; news</h2>
+        </div>
+        <a href="#contact" class="link-more">All notices <svg class="icon-inline"><use href="#icon-arrow"></use></svg></a>
+      </div>
+      <div class="news-grid" id="newsGrid">
+        <!-- populated by script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ADMISSIONS CTA ============ -->
+  <section class="admissions" id="admissions">
+    <div class="section-inner admissions-inner">
+      <div>
+        <p class="eyebrow eyebrow-light">Admissions 2026/27</p>
+        <h2>Applications for Foundation, Junior and Senior entry are open.</h2>
+        <p>We admit on promise, not polish. Tell us about your child, and our admissions team will guide you through assessment, house placement, and enrolment.</p>
+      </div>
+      <form class="admissions-form" id="admissionsForm" novalidate>
+        <div class="form-row">
+          <label for="parentName">Parent / guardian name</label>
+          <input type="text" id="parentName" name="parentName" required>
+        </div>
+        <div class="form-row">
+          <label for="studentAge">Prospective student's age</label>
+          <select id="studentAge" name="studentAge" required>
+            <option value="" disabled selected>Select an age band</option>
+            <option value="foundation">Foundation (4–6)</option>
+            <option value="junior">Junior  Secondary 1</option>
+                <option value="junior">Junior  Secondary 2</option>
+                <option value="junior">Junior  Secondary 3</option>
+            <option value="senior">Senior Secondary 1</option>
+               <option value="senior">Senior Secondary 2</option>
+               <option value="senior">Senior Secondary 3</option>
+            <option value="sixth-form">Sixth Form (17–18)</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="parentEmail">Email address</label>
+          <input type="email" id="parentEmail" name="parentEmail" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-form">Request the prospectus</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer" id="contact">
+  <div class="section-inner footer-grid">
+    <div class="footer-brand">
+      <div class="brand-crest-footer-plate">
+        <img class="brand-crest-footer" src="assets/graziel-logo.jpg" alt="Graziel Royal Schools crest">
+      </div>
+      <p class="footer-motto">Knowledge · Spirit · Service</p>
+    </div>
+    <div class="footer-col">
+      <h4>Visit</h4>
+      <p>Along Ibogun Express Road, Opo Town, Ibogun<br>Graziel, GR1 4RS</p>
+    </div>
+    <div class="footer-col">
+      <h4>Reach us</h4>
+      <p><a href="mailto:admissions@grazielroyal.edu">admissions@grazielroyal.edu</a><br>
+      <a href="tel:+441234567890">+2348166205113</a></p>
+    </div>
+    <div class="footer-col">
+      <h4>Office hours</h4>
+      <p>Mon–Fri, 8:00–16:30<br>Term time only</p>
+    </div>
+  </div>
+  <div class="footer-base">
+    <p>© <span id="year"></span> Graziel Royal Schools. All rights reserved.</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24"><path d="M12 19V5M12 5l-6 6M12 5l6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
